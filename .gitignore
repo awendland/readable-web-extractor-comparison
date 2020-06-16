@@ -1,6 +1,7 @@
 # Project Specific
 *.secret*
 test_pages/
+*.html
 
 #############
 # Terraform #

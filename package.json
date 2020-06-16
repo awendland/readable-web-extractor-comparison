@@ -1,0 +1,54 @@
+{
+  "name": "readable-extractor-comparison",
+  "version": "1.0.0",
+  "description": "A benchmark for manually evaluating different readable extractors for webpages",
+  "main": "index.js",
+  "repository": "github.com/awendland/readable-extractor-comparison.git",
+  "author": "Alex Wendland <me@alexwendland.com>",
+  "license": "MIT",
+  "scripts": {
+    "commit": "git-cz",
+    "scripts:run": "ts-node-script --transpile-only",
+    "scripts:tsc": "tsc -p scripts/",
+    "scripts:check": "yarn scripts:tsc --noEmit",
+    "scripts:watch": "yarn scripts:check --watch"
+  },
+  "dependencies": {
+    "@types/jsdom": "16.2.3",
+    "@types/mozilla-readability": "0.1.4",
+    "@types/yargs": "15.0.5",
+    "cleanview": "1.5.9",
+    "fast-glob": "3.2.3",
+    "filenamify-url": "2.1.1",
+    "fp-ts": "2.6.5",
+    "fp-ts-contrib": "0.1.16",
+    "got": "11.3.0",
+    "io-ts": "2.2.5",
+    "jsdom": "16.2.2",
+    "metascraper": "5.12.6",
+    "metascraper-author": "5.11.21",
+    "metascraper-description": "5.11.21",
+    "metascraper-image": "5.11.21",
+    "metascraper-title": "5.11.21",
+    "mozilla-readability": "github:mozilla/readability",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.5",
+    "yargs": "15.3.1"
+  },
+  "devDependencies": {
+    "commitizen": "4.1.2",
+    "cz-conventional-changelog": "3.2.0"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "engines": {
+    "node": ">=12.6.0",
+    "yarn": "1.x"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
