@@ -16,6 +16,7 @@
   "dependencies": {
     "@types/jsdom": "16.2.3",
     "@types/mozilla-readability": "0.1.4",
+    "@types/node": "14",
     "@types/yargs": "15.0.5",
     "cleanview": "1.5.9",
     "fast-glob": "3.2.3",
@@ -43,7 +44,7 @@
     "semi": false
   },
   "engines": {
-    "node": ">=12.6.0",
+    "node": ">=14",
     "yarn": "1.x"
   },
   "config": {

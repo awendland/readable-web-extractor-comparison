@@ -130,7 +130,7 @@
   resolved "https://registry.yarnpkg.com/@types/mozilla-readability/-/mozilla-readability-0.1.4.tgz#2c8f042ee25e4480f18cbd474f01c6f96049043e"
   integrity sha512-YOoxlAUc7iD/1S01fye0xmPpu1nUKb5LTMLZVv+VgAByhEwGuwXLhM9AUnEUtWSPQL7sFH0GBv8NuFcEXcN4Nw==
 
-"@types/node@*":
+"@types/node@*", "@types/node@14":
   version "14.0.13"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.13.tgz#ee1128e881b874c371374c1f72201893616417c9"
   integrity sha512-rouEWBImiRaSJsVA+ITTFM6ZxibuAlTuNOCyxVbwreu6k6+ujs7DfnU9o+PShFhET78pMBl3eH+AGSI5eOTkPA==
@@ -613,7 +613,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-commitizen@^4.0.3, commitizen@^4.1.2:
+commitizen@4.1.2, commitizen@^4.0.3:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.1.2.tgz#6095eb825fd3f0d3611df88e6803c69b23307e9a"
   integrity sha512-LBxTQKHbVgroMz9ohpm86N+GfJobonGyvDc3zBGdZazbwCLz2tqLa48Rf2TnAdKx7/06W1i1R3SXUt5QW97qVQ==
@@ -1102,7 +1102,7 @@ filename-reserved-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/filename-reserved-regex/-/filename-reserved-regex-2.0.0.tgz#abf73dfab735d045440abfea2d91f389ebbfa229"
   integrity sha1-q/c9+rc10EVECr/qLZHzieu/oik=
 
-filenamify-url@^2.1.1:
+filenamify-url@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/filenamify-url/-/filenamify-url-2.1.1.tgz#db9e8c382a3fb9e80c50bc7b596821e80fc4cf81"
   integrity sha512-6HaMJgiRamhFMlUfCu5M8xlkgPS75p6xPZdIQwKWQrI8HcywH1+npwl3uMh9QnE8aBa/xBUNQmf4HEJVOybwpQ==
