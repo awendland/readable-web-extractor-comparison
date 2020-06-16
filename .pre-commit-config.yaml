@@ -1,0 +1,43 @@
+repos:
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v3.1.0
+    hooks:
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: detect-private-key
+
+  - repo: git://github.com/luminopia/pre-commit-hooks
+    rev: v0.0.11
+    hooks:
+      - id: enforce-action-comments
+
+  - repo: https://github.com/prettier/prettier
+    rev: 2.0.5
+    hooks:
+      - id: prettier
+
+  - repo: local
+    hooks:
+      # https://github.com/hadolint/hadolint
+      - id: dockerfile-lint
+        name: Dockerfile Lint
+        language: docker_image
+        entry: hadolint/hadolint:v1.17.6 hadolint
+        files: ^.*Dockerfile.*$
+
+        # https://github.com/koalaman/shellcheck
+      - id: shellcheck-lint
+        name: Shellcheck
+        language: docker_image
+        entry: koalaman/shellcheck:v0.7.1
+        types: [shell]
+
+        # https://github.com/igorshubovych/markdownlint-cli
+      - id: markdown-lint
+        name: Markdown Lint
+        language: node
+        additional_dependencies: [markdownlint-cli]
+        entry: markdownlint
+        types: [markdown]
+        args: [--config, .markdownlintrc]
