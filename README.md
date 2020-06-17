@@ -8,6 +8,7 @@ Currently the following libraries are implemented:
 
 - [mozilla/readability](https://github.com/mozilla/readability)
 - [cleanview](https://github.com/mozilla/readability)
+- [metascraper](https://github.com/microlinkhq/metascraper)
 
 ## Results
 
