@@ -13,9 +13,9 @@ Currently the following libraries are implemented:
 
 ## Results
 
-The latest output from running the comparisons on a set of random pages selected from Hacker News is available on the `generated` branch ([direct link to report](#TODO))
+The latest output from running the comparisons on a set of 16 random pages selected from Hacker News in June 2020 is available on the `gh-pages` branch ([direct link to report](https://awendland.github.io/readable-web-extractor-comparison/report.html)).
 
-Based on these comparisons [@awendland](https://github.com/awendland) is intending to use the _TODO_ project.
+Based on these comparisons [@awendland](https://github.com/awendland) is intending to use the _mozilla/readability_ project.
 
 ### Example Report
 
