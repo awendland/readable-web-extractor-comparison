@@ -10,6 +10,8 @@ Currently the following libraries are implemented:
 - [cleanview](https://github.com/mozilla/readability)
 - [metascraper](https://github.com/microlinkhq/metascraper)
 - [@postlight/mercury-parser](https://github.com/postlight/mercury-parser)
+- TODO - [clean-mark](https://github.com/croqaz/clean-mark) _(377 stars)_
+- TODO - [ascrape-js](https://github.com/Mitica/ascrape-js) _(13 stars)_
 
 ## Results
 
