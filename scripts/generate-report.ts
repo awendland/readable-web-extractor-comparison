@@ -125,6 +125,25 @@ export function createHtmlReport(results: Array<PageResult>) {
             }</a></summary>
 
               <div class="row">
+                <div class="cell"></div>
+                ${pageResult.extractions
+                  .map(
+                    (e) =>
+                      `<div class="cell">${
+                        e.info
+                          ? Object.entries(e.info)
+                              .filter(
+                                ([k, v]) =>
+                                  !["simplifiedHtml"].includes(k) && !!v
+                              )
+                              .map(([k, v]) => `<b>${k}</b>: ${v}`)
+                              .join("<br/>")
+                          : "None"
+                      }</div>`
+                  )
+                  .join("\n")}
+              </div>
+              <div class="row">
                 <div class="cell iframe"><button page-src="${
                   pageResult.page.url
                 }">Load iframe</button></div>
@@ -132,7 +151,7 @@ export function createHtmlReport(results: Array<PageResult>) {
                   .map(
                     (extraction) =>
                       `<div class="cell">${
-                        extraction.info?.simplifiedHtml ?? "Failed"
+                        extraction.info?.simplifiedHtml ?? "None"
                       }</div>`
                   )
                   .join("\n")}
