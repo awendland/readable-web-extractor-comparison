@@ -14,9 +14,11 @@
     "scripts:watch": "yarn scripts:check --watch"
   },
   "dependencies": {
+    "@postlight/mercury-parser": "2.2.0",
     "@types/jsdom": "16.2.3",
     "@types/mozilla-readability": "0.1.4",
     "@types/node": "14",
+    "@types/postlight__mercury-parser": "2.2.2",
     "@types/yargs": "15.0.5",
     "cleanview": "1.5.9",
     "fast-glob": "3.2.3",
