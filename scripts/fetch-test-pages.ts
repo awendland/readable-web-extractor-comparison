@@ -85,7 +85,7 @@ export async function run() {
     Path.join(args.outDir, filenamifyUrl(url) + ".json")
 
   const fetchAndSavePage = flow(
-    (url) => {
+    (url: string) => {
       console.log(`Fetching ${url}`)
       return url
     },
@@ -106,7 +106,7 @@ export async function run() {
         fetchAndSavePage(url),
         TE.orElse((e) => {
           console.log(`Error for ${url}`, e)
-          return TE.taskEither.of(undefined)
+          return TE.taskEither.of(undefined as unknown)
         })
       )
   )()

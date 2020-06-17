@@ -1,6 +1,6 @@
 import * as TE from "fp-ts/lib/TaskEither"
 import * as E from "fp-ts/lib/Either"
-import got, { Got, OptionsOfTextResponseBody } from "got"
+import got, { OptionsOfTextResponseBody, RequestError } from "got"
 import { Readable } from "stream"
 import { readStream } from "./stream"
 
@@ -36,5 +36,5 @@ export const readStreamTE = (s: Readable) =>
 export const fetchPageTE = (url: string, opts?: OptionsOfTextResponseBody) =>
   TE.tryCatch(
     () => got.get(url, opts),
-    (e) => e
+    (e) => e as RequestError
   )

@@ -1,4 +1,4 @@
-import yargs, { string } from "yargs"
+import yargs from "yargs"
 import fg from "fast-glob"
 import fsp from "fs/promises"
 import * as t from "io-ts"
