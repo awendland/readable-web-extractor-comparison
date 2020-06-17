@@ -9,7 +9,8 @@ const adapter: Adapter = {
   },
   async extract({ html, url }) {
     const extracted = await Mercury.parse(url, {
-      html,
+      // Need to pass the html as a Buffer because otherwise Mercury gets the encoding wrong
+      html: Buffer.from(html),
     })
     return {
       title: extracted.title ?? undefined,
