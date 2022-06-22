@@ -25,7 +25,7 @@
     "filenamify-url": "2.1.1",
     "fp-ts": "2.6.5",
     "fp-ts-contrib": "0.1.16",
-    "got": "11.3.0",
+    "got": "11.8.5",
     "io-ts": "2.2.5",
     "jsdom": "16.2.2",
     "metascraper": "5.12.6",
