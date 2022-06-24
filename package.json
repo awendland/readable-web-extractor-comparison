@@ -27,7 +27,7 @@
     "fp-ts-contrib": "0.1.16",
     "got": "11.3.0",
     "io-ts": "2.2.5",
-    "jsdom": "16.2.2",
+    "jsdom": "16.5.0",
     "metascraper": "5.12.6",
     "metascraper-author": "5.11.21",
     "metascraper-description": "5.11.21",
